@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="BangkaGo project preview">
+  <defs>
+    <linearGradient id="b1" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0ea5e9" />
+      <stop offset="0.55" stop-color="#4f46e5" />
+      <stop offset="1" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="b1fade" x1="0" y1="0" x2="0" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000000" stop-opacity="0" />
+      <stop offset="1" stop-color="#000000" stop-opacity="0.35" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#b1)" />
+  <g stroke="#ffffff" stroke-opacity="0.12" stroke-width="1">
+    <path d="M0 100h800M0 200h800M0 300h800M0 400h800M100 0v500M200 0v500M300 0v500M400 0v500M500 0v500M600 0v500M700 0v500" />
+  </g>
+  <circle cx="690" cy="90" r="120" fill="#ffffff" opacity="0.08" />
+  <circle cx="110" cy="420" r="150" fill="#ffffff" opacity="0.06" />
+  <g fill="#ffffff" opacity="0.95">
+    <path d="M250 320h300l-48 62H298z" />
+    <path d="M395 170v138h-78z" opacity="0.9" />
+    <path d="M415 200v108h82z" opacity="0.8" />
+    <rect x="380" y="150" width="10" height="160" rx="5" />
+  </g>
+  <g stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.7" fill="none">
+    <path d="M180 400c20-12 40-12 60 0s40 12 60 0 40-12 60 0 40 12 60 0 40-12 60 0 40 12 60 0 40-12 60 0" />
+  </g>
+  <rect width="800" height="500" fill="url(#b1fade)" />
+  <text x="48" y="72" font-family="Sora, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" opacity="0.9">BangkaGo</text>
+  <text x="48" y="104" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" fill="#ffffff" opacity="0.75">Inter-Island Logistics · ML Demand Prediction</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Senior Citizen Assistance System project preview">
+  <defs>
+    <linearGradient id="b2" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7c3aed" />
+      <stop offset="0.55" stop-color="#6366f1" />
+      <stop offset="1" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="b2fade" x1="0" y1="0" x2="0" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000000" stop-opacity="0" />
+      <stop offset="1" stop-color="#000000" stop-opacity="0.35" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#b2)" />
+  <g stroke="#ffffff" stroke-opacity="0.12" stroke-width="1">
+    <path d="M0 100h800M0 200h800M0 300h800M0 400h800M100 0v500M200 0v500M300 0v500M400 0v500M500 0v500M600 0v500M700 0v500" />
+  </g>
+  <circle cx="700" cy="110" r="130" fill="#ffffff" opacity="0.08" />
+  <circle cx="120" cy="430" r="150" fill="#ffffff" opacity="0.06" />
+  <g fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round" opacity="0.95">
+    <path d="M330 300c0-39 31-70 70-70s70 31 70 70" />
+    <path d="M300 300c0-55 45-100 100-100s100 45 100 100" />
+    <path d="M360 300c0-22 18-40 40-40s40 18 40 40" />
+    <path d="M400 300v26" />
+    <path d="M360 300c0 22 18 40 40 40" opacity="0.7" />
+  </g>
+  <g fill="#ffffff" opacity="0.9">
+    <rect x="520" y="196" width="150" height="104" rx="14" />
+    <circle cx="562" cy="238" r="16" fill="#7c3aed" />
+    <rect x="590" y="226" width="62" height="9" rx="4" fill="#c7d2fe" />
+    <rect x="590" y="246" width="44" height="9" rx="4" fill="#c7d2fe" />
+    <rect x="540" y="272" width="112" height="8" rx="4" fill="#c7d2fe" />
+  </g>
+  <rect width="800" height="500" fill="url(#b2fade)" />
+  <text x="48" y="72" font-family="Sora, Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff" opacity="0.9">Senior Citizen Assistance</text>
+  <text x="48" y="104" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" fill="#ffffff" opacity="0.75">Biometric Verification · Financial Aid Distribution</text>
+</svg>
