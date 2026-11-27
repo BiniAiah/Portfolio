@@ -86,8 +86,8 @@ export const navItems: NavItem[] = [
 ]
 
 export const stats = [
-  { label: 'Projects delivered', value: '3+', icon: 'fa-solid fa-diagram-project' },
-  { label: 'PSC XI Top 4', value: 'Top 4', icon: 'fa-solid fa-trophy' },
+  { label: 'Projects', value: '3+', icon: 'fa-solid fa-diagram-project' },
+  { label: 'PSC XI 2026', value: 'Top 4', icon: 'fa-solid fa-trophy' },
   { label: 'Graduating', value: '2027', icon: 'fa-solid fa-graduation-cap' },
 ]
 

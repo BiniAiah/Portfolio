@@ -31,7 +31,7 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-8">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:gap-14 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-8">
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-semibold text-emerald-700">
             <span className="relative flex h-2 w-2" aria-hidden="true">
@@ -97,15 +97,19 @@ export default function Hero() {
             </span>
           </div>
 
-          <dl className="mt-10 grid max-w-lg grid-cols-3 gap-3">
+          <dl className="mt-8 grid max-w-lg grid-cols-3 gap-2.5 sm:mt-10 sm:gap-3">
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-2xl border border-slate-200/80 bg-white/80 p-3.5 shadow-sm backdrop-blur transition-transform hover:-translate-y-1"
+                className="rounded-2xl border border-slate-200/80 bg-white/80 p-3 shadow-sm backdrop-blur transition-transform hover:-translate-y-1 sm:p-3.5"
               >
                 <i className={`${stat.icon} text-indigo-500`} aria-hidden="true" />
-                <dt className="mt-2 text-xs font-medium text-slate-500">{stat.label}</dt>
-                <dd className="font-display text-lg font-bold text-slate-900">{stat.value}</dd>
+                <dt className="mt-2 text-[11px] font-medium text-slate-500 sm:text-xs">
+                  {stat.label}
+                </dt>
+                <dd className="font-display text-base font-bold text-slate-900 sm:text-lg">
+                  {stat.value}
+                </dd>
               </div>
             ))}
           </dl>
@@ -132,27 +136,29 @@ export default function Hero() {
               aria-hidden="true"
             >
               <p className="font-display text-base font-semibold text-white">{profile.name}</p>
-              <p className="text-xs text-slate-200">{profile.headline}</p>
+              <p className="text-[11px] leading-snug text-slate-200 sm:text-xs">
+                {profile.headline}
+              </p>
             </div>
           </div>
 
-          <div className="absolute -right-3 top-10 hidden items-center gap-3 rounded-2xl border border-white/70 bg-white/90 p-3 shadow-xl shadow-slate-900/10 backdrop-blur sm:flex animate-float">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-amber-100 text-amber-600">
+          <div className="absolute left-1 top-4 flex items-center gap-2 rounded-2xl border border-white/70 bg-white/90 p-2.5 shadow-xl shadow-slate-900/10 backdrop-blur animate-float sm:left-auto sm:-right-3 sm:top-10 sm:gap-3 sm:p-3">
+            <span className="grid h-8 w-8 place-items-center rounded-xl bg-amber-100 text-amber-600 sm:h-10 sm:w-10">
               <i className="fa-solid fa-trophy" aria-hidden="true" />
             </span>
             <div>
-              <p className="text-xs font-medium text-slate-500">PSC XI 2026</p>
-              <p className="text-sm font-bold text-slate-900">Top 4 Overall</p>
+              <p className="text-[10px] font-medium text-slate-500 sm:text-xs">PSC XI 2026</p>
+              <p className="text-xs font-bold text-slate-900 sm:text-sm">Top 4 Overall</p>
             </div>
           </div>
 
-          <div className="absolute -left-4 bottom-12 hidden items-center gap-3 rounded-2xl border border-white/70 bg-white/90 p-3 shadow-xl shadow-slate-900/10 backdrop-blur sm:flex animate-float-slow">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-indigo-100 text-indigo-600">
+          <div className="absolute right-1 top-4 flex items-center gap-2 rounded-2xl border border-white/70 bg-white/90 p-2.5 shadow-xl shadow-slate-900/10 backdrop-blur animate-float-slow sm:right-auto sm:-left-4 sm:bottom-32 sm:top-auto sm:gap-3 sm:p-3">
+            <span className="grid h-8 w-8 place-items-center rounded-xl bg-indigo-100 text-indigo-600 sm:h-10 sm:w-10">
               <i className="fa-solid fa-code" aria-hidden="true" />
             </span>
             <div>
-              <p className="text-xs font-medium text-slate-500">Shipped</p>
-              <p className="text-sm font-bold text-slate-900">3+ Projects</p>
+              <p className="text-[10px] font-medium text-slate-500 sm:text-xs">Shipped</p>
+              <p className="text-xs font-bold text-slate-900 sm:text-sm">3+ Projects</p>
             </div>
           </div>
         </div>
