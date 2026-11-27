@@ -6,9 +6,9 @@ const contactChannels = [
   {
     label: 'Email',
     value: profile.email,
-    href: `mailto:${profile.email}`,
+    href: profile.gmailCompose,
     icon: 'fa-solid fa-envelope',
-    external: false,
+    external: true,
   },
   {
     label: 'GitHub',
@@ -91,7 +91,9 @@ export default function Contact() {
 
                 <div className="mt-7 flex flex-wrap items-center gap-3">
                   <a
-                    href={`mailto:${profile.email}`}
+                    href={profile.gmailCompose}
+                    target="_blank"
+                    rel="noreferrer noopener"
                     className="shine inline-flex items-center gap-2 rounded-full bg-linear-to-r from-indigo-600 via-violet-600 to-cyan-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition-transform hover:-translate-y-0.5"
                   >
                     <i className="fa-solid fa-envelope" aria-hidden="true" />
@@ -110,6 +112,16 @@ export default function Contact() {
                     {copied ? 'Copied!' : 'Copy email'}
                   </button>
                 </div>
+
+                <p className="mt-3 text-sm text-slate-500">
+                  Prefer your mail app?{' '}
+                  <a
+                    href={`mailto:${profile.email}`}
+                    className="font-semibold text-indigo-600 underline-offset-4 hover:underline"
+                  >
+                    Open mailto
+                  </a>
+                </p>
 
                 <p className="mt-5 inline-flex items-center gap-2 text-sm text-slate-500">
                   <span className="relative flex h-2 w-2" aria-hidden="true">

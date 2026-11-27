@@ -73,7 +73,7 @@ export default function Hero() {
               Download Resume
             </a>
             <a
-              href={`mailto:${profile.email}`}
+              href="#contact"
               className="inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-slate-600 transition-colors hover:text-indigo-600"
             >
               <i className="fa-regular fa-envelope" aria-hidden="true" />

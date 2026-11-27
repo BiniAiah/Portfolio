@@ -63,6 +63,8 @@ export const profile = {
     'Information Technology undergraduate with academic project experience in web development, PostgreSQL database management, system integration, machine learning, data generation, and feature engineering. Proficient in Python, JavaScript, TypeScript, and C#, with practical experience developing database-driven applications and integrating biometric systems.',
   location: 'Lapu-Lapu City, Cebu, Philippines',
   email: 'macahibaglloyd@gmail.com',
+  gmailCompose:
+    'https://mail.google.com/mail/?view=cm&fs=1&to=macahibaglloyd@gmail.com&su=Portfolio%20Inquiry',
   phone: '+63 963 875 8810',
   github: 'https://github.com/BiniAiah',
   githubUsername: 'BiniAiah',

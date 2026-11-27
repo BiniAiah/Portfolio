@@ -96,7 +96,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href={`mailto:${profile.email}`}
+            href="#contact"
             className="hidden items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-slate-700 sm:inline-flex"
           >
             Let&apos;s talk
@@ -142,7 +142,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href={`mailto:${profile.email}`}
+              href="#contact"
               onClick={() => setOpen(false)}
               className="mt-2 flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white"
             >

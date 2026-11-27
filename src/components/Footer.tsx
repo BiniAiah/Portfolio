@@ -42,8 +42,10 @@ export default function Footer() {
               <i className="fa-brands fa-github" aria-hidden="true" />
             </a>
             <a
-              href={`mailto:${profile.email}`}
-              aria-label="Send an email"
+              href={profile.gmailCompose}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Email John Floyd (opens Gmail)"
               className="grid h-10 w-10 place-items-center rounded-xl border border-slate-200 bg-white text-slate-600 transition-colors hover:border-indigo-200 hover:text-indigo-600"
             >
               <i className="fa-solid fa-envelope" aria-hidden="true" />
