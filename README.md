@@ -46,9 +46,9 @@ public/assets/images/
 | --- | --- |
 | `profile.jpg` | Hero photo (currently pulled from your GitHub avatar) |
 | `profile-placeholder.svg` | Fallback if the photo is missing |
-| `project-bangkago.svg` | BangkaGo project preview |
-| `project-senior.svg` | Senior Citizen Assistance preview |
-| `project-jkl.svg` | JKL Vince Furniture preview |
+| `project-bangkago.webp` | BangkaGo project preview |
+| `project-senior.webp` | Senior Citizen Assistance preview |
+| `project-jkl.webp` | JKL Vince Furniture preview |
 | `favicon.svg` | Browser tab icon |
 | `og-image.svg` | Social sharing preview |
 

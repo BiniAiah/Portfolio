@@ -45,19 +45,15 @@ export default function Projects() {
         </Reveal>
 
         <Reveal className="mt-12">
-          <article className="group grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-xl hover:shadow-indigo-500/10 lg:grid-cols-2">
-            <div className="relative overflow-hidden bg-slate-100">
+          <article className="group grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-shadow duration-300 hover:shadow-xl hover:shadow-indigo-500/10">
+            <div className="relative aspect-[2/1] overflow-hidden bg-slate-100">
               <img
                 src={asset(featured.image)}
                 alt={featured.imageAlt}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 lg:absolute lg:inset-0"
+                className="h-full w-full object-cover object-center"
                 loading="lazy"
                 decoding="async"
               />
-              <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-indigo-600 shadow-sm backdrop-blur">
-                <i className="fa-solid fa-star" aria-hidden="true" />
-                Featured
-              </span>
             </div>
 
             <div className="flex flex-col p-6 sm:p-8">
@@ -70,9 +66,15 @@ export default function Projects() {
                 <span>{featured.role}</span>
               </div>
 
-              <h3 className="mt-3 font-display text-2xl font-bold text-slate-900">
-                {featured.title}
-              </h3>
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+                <h3 className="font-display text-2xl font-bold text-slate-900">
+                  {featured.title}
+                </h3>
+                <span className="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-indigo-600">
+                  <i className="fa-solid fa-star" aria-hidden="true" />
+                  Featured
+                </span>
+              </div>
               <p className="mt-1 text-sm font-medium text-indigo-600">{featured.subtitle}</p>
               <p className="mt-4 text-sm leading-relaxed text-slate-600">{featured.description}</p>
 
